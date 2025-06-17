@@ -13,8 +13,8 @@ UCLASS()
 class L20250609_NETWORK_API ATitlePC : public APlayerController
 {
 	GENERATED_BODY()
+public:
 
-public:	
 	void StartServer();
 
 	void ConnectClient(FText ServerIP);

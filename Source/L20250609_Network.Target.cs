@@ -8,8 +8,9 @@ public class L20250609_NetworkTarget : TargetRules
 	public L20250609_NetworkTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V5;
+        DefaultBuildSettings = BuildSettingsVersion.Latest;
+        IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 
-		ExtraModuleNames.AddRange( new string[] { "L20250609_Network" } );
+        ExtraModuleNames.AddRange( new string[] { "L20250609_Network" } );
 	}
 }

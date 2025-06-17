@@ -7,14 +7,14 @@
 #include "MyGameInstance.generated.h"
 
 /**
- *
+ * 
  */
 UCLASS()
 class L20250609_NETWORK_API UMyGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
 public:
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Data")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category="Data")
 	FString UserId;
-
+	
 };

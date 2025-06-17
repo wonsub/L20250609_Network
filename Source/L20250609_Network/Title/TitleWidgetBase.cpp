@@ -12,11 +12,11 @@ void UTitleWidgetBase::NativeConstruct()
 {
 	Super::NativeConstruct();
 
-	UserIdText = Cast<UEditableTextBox>(GetWidgetFromName(TEXT("UserIDText")));
+	//UserIdText = Cast<UEditableTextBox>(GetWidgetFromName(TEXT("UserIDText")));
 	ServerIPText = Cast<UEditableTextBox>(GetWidgetFromName(TEXT("ServerIPText")));
 	PasswordText = Cast<UEditableTextBox>(GetWidgetFromName(TEXT("PasswordText")));
 
-	StartServerButton = Cast<UButton>(GetWidgetFromName(TEXT("StartServerButton")));
+	//StartServerButton = Cast<UButton>(GetWidgetFromName(TEXT("StartServerButton")));
 	ConnectButton = Cast<UButton>(GetWidgetFromName(TEXT("ConnectButton")));
 
 	if (StartServerButton)
@@ -28,7 +28,7 @@ void UTitleWidgetBase::NativeConstruct()
 	{
 		ConnectButton->OnClicked.AddDynamic(this, &UTitleWidgetBase::OnClickConnectButton);
 	}
-
+	
 }
 
 void UTitleWidgetBase::OnClickServerStartButton()

@@ -11,5 +11,5 @@ void ATitlePC::StartServer()
 
 void ATitlePC::ConnectClient(FText ServerIP)
 {
-	UGameplayStatics::OpenLevel(GetWorld(), FName(ServerIP.ToString()));
+	UGameplayStatics::OpenLevel(GetWorld(), FName(ServerIP.ToString()), true, TEXT("Hello"));
 }
